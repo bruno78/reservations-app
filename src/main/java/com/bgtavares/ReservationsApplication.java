@@ -1,4 +1,4 @@
-package com.bgtavares.reservations;
+package com.bgtavares;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
