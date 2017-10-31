@@ -18,7 +18,7 @@ import java.util.List;
 @Controller
 @RequestMapping(value="/reservations")
 public class ReservationController {
-    private static final DateFormat DATE_FORMAT = new SimpleDateFormat(pattern: "yyyy-MM-dd");
+    private static final DateFormat DATE_FORMAT = new SimpleDateFormat( "yyyy-MM-dd");
 
     @Autowired
     private ReservationService reservationService;
@@ -41,7 +41,7 @@ public class ReservationController {
         }
         List<RoomReservation> roomReservationList = this.reservationService.getRoomReservationForDate(date);
 
-        model.addAttribute("roomReservations" roomReservationList);
+        model.addAttribute("roomReservations", roomReservationList);
         return "reservations";
     }
 }
